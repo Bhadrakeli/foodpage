@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    margin: 0px;
+}
+
+.bg-container {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-gluten-img.png");
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    min-width: 100vw;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+
+.sidebar-container {
+    background: rgb(0, 0, 0, 0.5);
+    max-width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0px;
+}
+
+.text {
+    color: gold;
+    font-family: "Sans-Serif";
+    font-size: 30px;
+    font-style: italic;
+}
+
+.header {
+    color: #ffffff;
+    font-family: "Andulus";
+    font-size: 30px;
+}
+
+.contact {
+    color: #ffffff;
+    font-family: "Andulus";
+    font-size: 40px;
+}
+
+.nav-items {
+    background-color: yellowgreen;
+    color: black;
+    font-size: 40px;
+    height: 60px;
+    list-style-type: none;
+    margin: 10px;
+}
+
+.button {
+    height: 40px;
+    width: 130px;
+    background-color: #ffdda9;
+    color: black;
+    border-radius: 10px;
+    border-width: 0px;
+}
+
+@media (max-width : 768px) {
+    .bg-container {
+        direction: column;
+    }
+
+    .sidebar-container {
+        display: flex;
+        direction: column;
+        border-radius: 10px;
+        justify-content: center;
+        text-align: center;
+        background-color: transparent;
+        order: 1;
+        min-width: 100vw;
+        max-height: 250px;
+        margin-left: 50px;
+    }
+
+    .header {
+        font-size: 35px;
+        color: white;
+    }
+
+    .text {
+        font-size: 30px;
+        color: blue;
+
+    }
+
+    .contact {
+        font-size: 35px;
+    }
+
+    .nav-items {
+        height: 50px;
+    }
+}
